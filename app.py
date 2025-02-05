@@ -22,7 +22,7 @@ def main():
         model = load_model("model/keras_model.h5", compile=False)
         print(model)
 
-        class_names = open("model/labels.txt", "r", encoding='utf-8').readlines()
+        class_names = open("model/labels.txt", "r", encoding='cp949').readlines()
 
 
         data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
